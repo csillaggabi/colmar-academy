@@ -1,0 +1,425 @@
+/*CSS reset*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Utility classes */
+
+.u_flex {
+    display: flex;
+}
+
+.u_none {
+    display: none;
+}
+
+
+/* Header */
+
+.header {
+    height: 64px;
+    width: auto;
+    background-color: #ffffff;
+    justify-content: space-between;
+}
+#logoimage {
+    height: 32px;
+    width: auto;
+}
+.header, #logo, #online, #campus, #companies, #signin {
+    text-decoration: none;
+    align-items: center;
+}
+#campus, #online, #companies, #signin {
+    padding: 8px;
+    color: #646464;
+}
+#signin {
+    margin-right: 16px;
+}
+#colmaracademy {
+    color: #9B9B9B; 
+}
+#colmarbold {
+    font-weight: bold;
+    color: #4A4A4A;
+}
+
+@media screen and (min-width: 768px) {
+    .u_none {
+      display: inline;
+    }
+    .header {
+        justify-content: space-between;
+    }
+    .headercontent {
+        display: flex;
+    }
+    #campusimage, #companiesimage, #signinimage {
+        display: none;
+    }
+    #logo {
+        margin-left: 24px;
+    }
+  }
+
+/* Banner */
+
+.bannersection{
+    background-color: #DBDBDB;
+    flex-direction: column;
+}
+#banner {
+    width: 100%;
+    height: auto;
+}
+.bannertext {
+    flex-direction: column;
+    padding: 24px;
+    text-align: center;
+}
+.bannersection h1 {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 32px 0 32px 16px;
+    color: #4a4a4a;
+    line-height: 120%;
+}
+.bannersection h4 {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0 0 24px 16px;
+    color: #4a4a4a;
+    line-height: 150%;
+}
+.start {
+    padding: 8px;
+    background-color: #9B9B9B;
+    margin: 24px 50px 32px 50px;
+    text-align: center;
+    border: none;
+}
+.start a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+    .bannersection {
+      flex-direction: row;
+    }
+    #banner {
+        width: 60%;
+        height: auto;
+        margin: 32px 8px 32px 24px;
+    }
+    .bannertext {
+        width: 40%;
+        flex-direction: column;
+        margin-top: 32px 0;
+    }
+    .start {
+        background-color: #4A4A4A;
+    }
+  }
+
+/* Articles */
+
+.desktoparticle h2{
+    font-size: 25px;
+    font-weight: bold;
+    color: #4a4a4a;
+    margin: 32px 0 24px 24px;
+}
+.desktoparticle p{
+    font-size: 18px;
+    line-height: 120%;
+    color: #4a4a4a;
+    margin-left: 24px;
+    width: 60%;
+}
+.desktoparticle footer{
+    font-size: 12px;
+    margin: 32px 0 0 24px;
+}
+.mobilearticles {
+    flex-direction: column;
+    padding: 16px;
+}
+.subarticle {
+    width: 100%;
+    flex-direction: column;
+}
+.desktopimage {
+    width: 100%;
+    height: auto;
+}
+.mobileimage {
+    width: 100%;
+    margin-top: 16px;
+}
+.mobilearticles h3 {
+    margin: 16px 0 10px 32px;
+    color: #4a4a4a;
+    font-size: 28px;
+    font-weight: bold;
+}
+.mobilearticles p {
+    margin: 10px 0 10px 32px;
+}
+.mobilearticles a {
+    text-decoration: none;
+    color: #7FAFE8;
+    margin-left: 32px;
+}
+
+@media screen and (min-width: 768px) {
+    .articles {
+      flex-direction: row;
+      margin-bottom: 32px;
+    }
+    .desktoparticle {
+        box-sizing: border-box;
+        width: 60%;
+        padding: 32px 24px;
+    }
+    #practising {
+        width: 100%;
+        height: auto;
+    }
+    .mobilearticles {
+        box-sizing: border-box;
+        width: 40%;
+        padding: 32px 1px 0 16px;
+    }
+    .subarticle {
+        flex-direction: row;
+        border: 1px solid #E0E2E2;
+    }
+    .desktopimage {
+        width: 35%;
+        height: auto;
+    }
+    .desktoparticle p, footer {
+        width: auto;
+    }
+    .mobileimage {
+        margin: 16px 16px 38px 16px;
+    }
+
+    .informationtext {
+        width: 65%;
+    }
+    .desktopimage {
+        width: 35%;
+    }
+    div article:nth-of-type(3) {
+        background-color: #D8D8D8;
+    }
+}
+
+/* Start learning */
+
+.learning {
+    padding: 16px;
+}
+
+.learninglist {
+    flex-wrap: wrap;
+}
+.learning h1{
+    font-size: 30px;
+    font-weight: bold;
+    color: #4a4a4a;
+    margin: 32px 0;
+    text-align: center;
+}
+.learninglist li {
+    background-color: #D8D8D8;
+    padding: 16px;
+    margin: 8px;
+    width: 100%;
+}
+.learninglist a {
+    text-decoration: none;
+}
+.learningtext h3 {
+    font-weight: bold;
+    color: #4a4a4a;
+    font-size: 16px;
+}
+
+@media screen and (min-width: 768px) {
+    .learning {
+        background-color: #EAEBEC;
+    }
+    .learning h1 {
+        margin: 16px 0;
+    }
+    .learninglist {
+        justify-content: center;
+        padding: 0 20px;
+    }
+    .learning li {
+        flex-direction: column;
+        width: 25%;
+        padding: 0;
+        margin: 16px;
+    }
+    .learningimage {
+        width: 100%;
+        height: auto;
+    }
+    .learninglist h3 {
+        padding: 16px 0;
+    }
+    .learninglist h4 {
+        width: 100%;
+        padding: 8px 0 8px 0;
+    }
+    .learningtext {
+        padding: 0 0 24px 16px;
+        display: flex;
+        flex-direction: column;
+    }
+    .learningtext h3 {
+        color: #4A4A4A;
+        font-weight: bold;
+    }
+    .learningtext h4, p {
+        color: #767676;
+    }
+}
+
+
+/* Theses exhibit */
+
+.exhibit {
+    flex-direction: column;
+}
+.exhibit h1{
+    font-size: 30px;
+    font-weight: bold;
+    color: #4a4a4a;
+    margin: 32px 0;
+    text-align: center;
+}
+
+.urban video {
+    width: 100%;
+    margin-bottom: 24px;
+}
+.exhibit a {
+    text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+    #urbancontainer {
+        flex-direction: row;
+        text-align: center;
+        border-bottom: 1px solid #A9AAAD;
+        padding-bottom: 32px;
+    }
+    .urban {
+        box-sizing: border-box;
+        width: 60%;
+        padding-left: 24px;
+    }
+    .thesesdesktop {
+        box-sizing: border-box;
+        padding-left: 24px;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+    }
+    .fisma, .now a {
+        flex-direction: row;
+    }
+    .fisma a:nth-of-type(1) {
+        background-color: #D8D8D8;
+    }
+    .fisma img  {
+        width: 35%;
+        height: auto;
+        margin: 16px;
+    }
+    .now img {
+        width: 35%;
+        height: auto;
+        margin: 16px;
+    }
+    .thesestext {
+        width: 65%;
+    }
+    .thesestext h3 {
+        font-weight: bold;
+        color: #4a4a4a;
+        font-size: 16px;
+        margin: 16px 0;
+    }
+    .urban h3 {
+        font-weight: bold;
+        color: #4a4a4a;
+        font-size: 16px;
+        margin: 16px 0;
+    }
+}
+
+/* Footer */
+
+.footer-content {
+    color: #868787;
+    padding: 16px;
+}
+
+@media screen and (min-width: 768px) {
+    .footer-content {
+        justify-content: space-between;
+        padding: 16px 16px 16px 24px;
+    }
+    .footer-content a {
+        text-decoration: none;
+    }
+}
