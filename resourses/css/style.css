@@ -118,28 +118,28 @@ table {
 .bannertext {
     flex-direction: column;
     padding: 24px;
-    text-align: center;
+    justify-content: center;
 }
 .bannersection h1 {
     font-size: 30px;
     font-weight: bold;
-    padding: 32px 0 32px 16px;
+    margin-bottom: 24px;
     color: #4a4a4a;
     line-height: 120%;
 }
 .bannersection h4 {
     font-size: 18px;
     font-weight: bold;
-    padding: 0 0 24px 16px;
+    margin-bottom: 24px;
     color: #4a4a4a;
     line-height: 150%;
 }
 .start {
-    padding: 8px;
     background-color: #9B9B9B;
-    margin: 24px 50px 32px 50px;
     text-align: center;
     border: none;
+    padding: 8px 8px 8px 0;
+    margin-bottom: 24px;
 }
 .start a {
     text-decoration: none;
